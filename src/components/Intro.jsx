@@ -1,6 +1,6 @@
 import { profile, external } from "../data.js";
 import Figure from "./Figure.jsx";
-import Lead from "./Lead.jsx";
+import KeyLead from "./KeyLead.jsx";
 
 export default function Intro() {
   return (
@@ -21,7 +21,7 @@ export default function Intro() {
 
       <Figure className="max-w-[285px]" />
 
-      <Lead
+      <KeyLead
         letter="W"
         className="self-center md:pl-10"
         body={
@@ -33,7 +33,7 @@ export default function Intro() {
       >
         {profile.intro}{" "}
         <small className="text-[0.75em]">{profile.figRef}</small> {profile.introEnd}
-      </Lead>
+      </KeyLead>
     </section>
   );
 }

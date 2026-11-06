@@ -1,22 +1,22 @@
 export const profile = {
   name: "Nicholas Lawrentius",
-  title: "Digital Craftsman.",
-  intro: "elcome! I'm Your Name — a designer and coder who creates things with computers",
+  title: "Software Engineer.",
+  intro: "elcome! I'm Nicholas Lawrentius — a software engineer who creates things with computers",
   figRef: "(Fig 1.)",
   introEnd: "Digital Craftsman best describes my skill set.",
-  bio: "I'm detail-oriented and specialise in building design systems, component libraries and creating digital design. I've worked in creative studios, digital agencies and as a freelancer. Currently, I'm a Senior Developer at",
-  company: { label: "Your Company", href: "#" },
+  bio: "I'm detail-oriented and specialise in building design systems, component libraries and creating digital design. I've worked in creative studios, digital agencies and as a freelancer. Currently, I'm currently working as Associate Software Engineer at",
+  company: { label: "PT HM. Sampoerna", href: "#" },
 };
 
 export const nav = [
-  { label: "Writing", href: "#writing" },
+  { label: "Projects", href: "#project" },
   { label: "Contact", href: "#contact" },
 ];
 
 export const external = [
   { label: "Codepen", href: "https://codepen.io" },
   { label: "Twitter", href: "https://twitter.com" },
-  { label: "GitHub", href: "https://github.com" },
+  { label: "GitHub", href: "https://github.com/NicholasL5" },
 ];
 
 export const skills = {
@@ -61,23 +61,32 @@ export const writing = {
 export const monogram = "YN";
 
 export const history = {
-  lead: "or over a decade, I've worked in a variety of roles. My most recent interesting job was building a new design system & component library for a public-sector client.",
+  lead: "rom assistant lecturer to backend engineer, I've spent the last few years building APIs and data pipelines. My proudest work was leading backend development for the AYO KSA expansion across several B2B retail platforms.",
   body: "My latest positions are listed below.",
+  // Roles are listed newest first; several roles under one company show as a career journey.
   jobs: [
-    { company: "Company One", role: "Senior Creative Developer", dates: "Sep 2021 - Current" },
-    { company: "Company Two", role: "Senior Creative Developer", dates: "Feb 2020 - Sep 2021" },
-    { company: "Company Three", role: "Freelance Creative Developer", dates: "Jun 2019 - Sep 2019" },
-    { company: "Company Four", role: "Freelance Designer & Developer", dates: "Feb 2019 - Jun 2019" },
-    { company: "Company Five", role: "Freelance Creative Developer", dates: "Sep 2018 - Feb 2019" },
-    { company: "Company Six", role: "Digital Designer & Developer", dates: "Oct 2015 - Sep 2018" },
-    { company: "Company Seven", role: "Digital Designer & Developer", dates: "Feb 2010 - Sep 2015" },
+    {
+      company: "PT HM Sampoerna Tbk.",
+      roles: [
+        { role: "Associate Software Engineer, B2B & Data", dates: "Jan 2026 - Current" },
+        { role: "Fullstack Software Engineer", dates: "Aug 2025 - Dec 2025" },
+        { role: "Software Engineer Intern", dates: "Feb 2025 - Jul 2025" },
+      ],
+    },
+    {
+      company: "PT. Indowire Prima Industrindo",
+      roles: [{ role: "Software Engineer Intern", dates: "Jul 2024 - Dec 2024" }],
+    },
+    {
+      company: "Petra Christian University",
+      roles: [{ role: "Assistant Lecturer", dates: "Aug 2022 - Jun 2024" }],
+    },
   ],
-  clientsIntro:
-    "I've been lucky to work with a real variety of clients over the journey, I've listed some of the more notable ones here.",
-  clients: [
-    "Client 1", "Client 2", "Client 3",
-    "Client 4", "Client 5", "Client 6",
-    "Client 7", "Client 8", "Client 9",
-    "Client 10", "Client 11", "Client 12",
+  educationTitle: "Education",
+  educationIntro:
+    "I studied Computer Science at Petra Christian University, with a growing interest in machine learning and AI.",
+  education: [
+    { school: "Petra Christian University", detail: "Computer Science", dates: "Aug 2021 - Jun 2025" },
+    { school: "SMAK St. Albertus", detail: "High School", dates: "Jul 2018 - May 2021" },
   ],
 };
