@@ -1,10 +1,16 @@
+import { useRef } from "react";
 import { profile, external } from "../data.js";
-import Figure from "./Figure.jsx";
+import RoseFigure from "./RoseFigure.jsx";
 import KeyLead from "./KeyLead.jsx";
+import useWordReveal from "../hooks/useWordReveal.js";
 
 export default function Intro() {
+  const ref = useRef(null)
+  useWordReveal(ref)
+
   return (
     <section
+      ref={ref}
       id="top"
       className="mt-12 grid items-start gap-8 md:mt-24 md:grid-cols-[170px_285px_1fr] md:gap-x-10"
     >
@@ -19,7 +25,7 @@ export default function Intro() {
         </ul>
       </aside>
 
-      <Figure className="max-w-[285px]" />
+      <RoseFigure className="max-w-[285px]" />
 
       <KeyLead
         letter="W"

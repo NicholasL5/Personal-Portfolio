@@ -1,11 +1,11 @@
 import { history } from "../data.js";
-import Lead from "./Lead.jsx";
+import KeyLead from "./KeyLead.jsx";
 import Section from "./Section.jsx";
 
 export default function History() {
   return (
-    <Section id="history" title="HISTORY" em={5} side="left" dot>
-      <Lead letter="F" body={history.body}>{history.lead}</Lead>
+    <Section id="history" title="HISTORY." em={5} side="left" dot>
+      <KeyLead letter="F" body={history.body}>{history.lead}</KeyLead>
 
       <div className="mt-20 grid gap-16 pb-24 md:grid-cols-[470px_1fr] md:gap-x-24">
         <ul className="m-0 list-none p-0">

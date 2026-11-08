@@ -9,7 +9,8 @@ export const profile = {
 };
 
 export const nav = [
-  { label: "Projects", href: "#project" },
+  { label: "History", href: "#history" },
+  { label: "Projects", href: "#projects" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -25,6 +26,7 @@ export const skills = {
   columns: [
     {
       fig: "Fig 2.",
+      diagram: "microservices", // any key of `diagrams` in src/diagrams.js, e.g. "pipeline"
       title: "Design",
       paragraphs: [
         "Starting with a blank canvas, taking up a mouse (Fig 2) and creating something bespoke is very rewarding.",
@@ -35,6 +37,20 @@ export const skills = {
     },
     {
       fig: "Fig 3.",
+      filename: "develop.py",
+      code: `skills = ["design", "code"]
+
+
+def build(idea):
+    ui = sketch(idea)
+    return ship(
+        ui,
+        accessible=True,
+        resilient=True,
+    )
+
+
+build("something useful")`,
       title: "Development",
       paragraphs: [
         "Developing a conceptual idea into something engaging and functional can be equally satisfying.",
@@ -45,8 +61,8 @@ export const skills = {
   ],
 };
 
-export const writing = {
-  lead: "nough about 'skills' and work stuff. Here are some ideas taken from my brain and arranged into words. Hopefully someone finds them useful.",
+export const projects = {
+  lead: "nough about 'skills' and work stuff. Here are some ideas taken from my brain and arranged into something. Hopefully someone finds them useful.",
   body: "At the moment, I only have one lonely post, written in conjunction with launching this site. I'm aiming to allow myself time to do more of this moving forward.",
   posts: [
     {
@@ -58,7 +74,7 @@ export const writing = {
   ],
 };
 
-export const monogram = "YN";
+export const monogram = "NL";
 
 export const history = {
   lead: "rom assistant lecturer to backend engineer, I've spent the last few years building APIs and data pipelines. My proudest work was leading backend development for the AYO KSA expansion across several B2B retail platforms.",
@@ -66,7 +82,7 @@ export const history = {
   // Roles are listed newest first; several roles under one company show as a career journey.
   jobs: [
     {
-      company: "PT HM Sampoerna Tbk.",
+      company: "PT. HM Sampoerna Tbk",
       roles: [
         { role: "Associate Software Engineer, B2B & Data", dates: "Jan 2026 - Current" },
         { role: "Fullstack Software Engineer", dates: "Aug 2025 - Dec 2025" },
@@ -84,7 +100,7 @@ export const history = {
   ],
   educationTitle: "Education",
   educationIntro:
-    "I studied Computer Science at Petra Christian University, with a growing interest in machine learning and AI.",
+    "I studied Computer Science at Petra Christian University, with a growing interest in software development, machine learning and AI.",
   education: [
     { school: "Petra Christian University", detail: "Computer Science", dates: "Aug 2021 - Jun 2025" },
     { school: "SMAK St. Albertus", detail: "High School", dates: "Jul 2018 - May 2021" },
