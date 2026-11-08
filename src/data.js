@@ -1,10 +1,10 @@
 export const profile = {
   name: "Nicholas Lawrentius",
   title: "Software Engineer.",
-  intro: "elcome! I'm Nicholas Lawrentius — a software engineer who creates things with computers",
+  intro: "elcome! I'm Nicholas Lawrentius — a person who creates things with computers",
   figRef: "(Fig 1.)",
-  introEnd: "Digital Craftsman best describes my skill set.",
-  bio: "I'm detail-oriented and specialise in building design systems, component libraries and creating digital design. I've worked in creative studios, digital agencies and as a freelancer. Currently, I'm currently working as Associate Software Engineer at",
+  introEnd: "Software Engineer best describes my skill set.",
+  bio: "I'm detail-oriented and specialise in building design systems, component libraries and creating digital design. I've worked in creative studios, digital agencies and as a freelancer. Currently, I'm currently working as Associate at",
   company: { label: "PT HM. Sampoerna", href: "#" },
 };
 

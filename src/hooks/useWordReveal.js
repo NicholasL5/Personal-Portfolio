@@ -22,6 +22,8 @@ function splitWords(root) {
       }
       const span = document.createElement("span");
       span.style.display = "inline-block";
+      // Underlines don't propagate into inline-blocks, so take the parent's (e.g. a link's) explicitly.
+      span.style.textDecoration = "inherit";
       span.textContent = part;
       words.push(span);
       frag.appendChild(span);
